@@ -4,386 +4,359 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>The Westin Residences, Gurugram — Branded 3 &amp; 4 BHK by Marriott | Whiteland</title>
-<meta name="description" content="Official developer site. The Westin Residences, Gurugram by Whiteland — branded 3 &amp; 4 BHK on the Dwarka Expressway, Sector 103. From ₹7 Cr. Possession Dec 2028. Get the price list &amp; floor plans." />
+<meta name="description" content="Official developer site. The Westin Residences, Gurugram by Whiteland — branded 3 &amp; 4 BHK on the Dwarka Expressway, Sector 103. From ₹7 Cr. Possession Dec 2028." />
 <meta name="theme-color" content="#294237" />
 <link rel="preconnect" href="https://westinresidency.co.in" crossorigin />
-<link rel="preload" as="image" href="https://westinresidency.co.in/wp-content/uploads/2026/05/WestinRes2-4-25-358-Enhanced-NR_Web.webp" fetchpriority="high" />
+<link rel="preload" as="image" fetchpriority="high" href="https://westinresidency.co.in/wp-content/uploads/2026/05/WestinRes2-4-25-358-Enhanced-NR_Web.webp" />
 
-<!-- ============================================================
-     TRACKING — replace the IDs with WHITELAND's own accounts.
-     Meta Pixel + Google Ads conversion + GA4 all go here.
-     Lead fires on form submit; Contact fires on WhatsApp/Call.
-     ============================================================ -->
-<!-- <script>/* Meta Pixel: fbq('init','WHITELAND_PIXEL_ID'); fbq('track','PageView'); */</script> -->
-<!-- <script>/* GA4 + Google Ads: gtag('config','G-XXXX'); gtag('config','AW-XXXX'); */</script> -->
+<!-- TRACKING — replace with WHITELAND's Meta Pixel + Google Ads + GA4 IDs. Lead fires on submit; Contact on WhatsApp/Call. -->
+<!-- <script>/* fbq('init','WHITELAND_PIXEL'); fbq('track','PageView'); gtag('config','G-XXXX'); gtag('config','AW-XXXX'); */</script> -->
 
 <style>
   :root{
-    /* Westin brand palette (from guidelines — exact hex) */
-    --granite:#51555A; --granite-d:#3E4247; --basil:#294237; --basil-d:#1E322A;
-    --zest:#FFFF7D; --mint:#C5DDD1; --terracotta:#B4786C; --flax:#A59E9B;
-    --white:#FFFFFF; --paper:#FAFAF7; --line:#E3E1DA; --line-on-dark:rgba(255,255,255,.22);
-    --serif:Georgia,"Times New Roman",serif;      /* Freight Display Pro fallback */
-    --sans:Arial,Helvetica,sans-serif;            /* Graphik Starwood fallback   */
-    --head-h:66px;
+    --basil:#294237; --basil-d:#1C2E26; --basil-l:#33513F;
+    --granite:#51555A; --ivory:#F7F3EA; --ivory-2:#EFE9DC;
+    --mint:#C5DDD1; --zest:#FFFF7D; --terracotta:#B4786C; --flax:#A59E9B;
+    --line:#DED7C7; --line-dk:rgba(255,255,255,.18);
+    --serif:Georgia,"Times New Roman",serif; --sans:Arial,Helvetica,sans-serif;
+    --head-h:72px;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth; scroll-padding-top:var(--head-h);}     /* header-overlap fix */
-  body{margin:0;background:var(--paper);color:var(--granite);
-    font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;text-align:left;}
-  img{max-width:100%;display:block}
-  a{color:inherit}
-  h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--granite-d);letter-spacing:.2px;margin:0;text-wrap:balance}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--head-h)}
+  body{margin:0;background:var(--ivory);color:var(--basil);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:.4px;text-wrap:balance}
   section[id]{scroll-margin-top:var(--head-h)}
-  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-  /* eyebrow label — Graphik Semibold all-caps per guideline (labels may be caps; body may not) */
-  .eyebrow{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--basil)}
-  .eyebrow.on-dark{color:var(--mint)}
-  /* headline hairline rule — the Westin motif */
-  .ruled{padding-bottom:14px;border-bottom:1px solid var(--line);display:inline-block}
-  .ruled.on-dark{border-color:var(--line-on-dark)}
-  .lede{font-size:17px;max-width:60ch;color:var(--granite)}
-  .btn{display:inline-flex;align-items:center;gap:8px;justify-content:center;font-family:var(--sans);font-weight:700;
-    font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:15px 30px;border-radius:2px;cursor:pointer;
-    text-decoration:none;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s}
-  .btn-basil{background:var(--basil);color:#fff} .btn-basil:hover{background:var(--basil-d)}
-  .btn-ghost{background:transparent;color:var(--granite-d);border-color:var(--granite)} .btn-ghost:hover{border-color:var(--basil);color:var(--basil)}
-  .btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.5)} .btn-ghost.on-dark:hover{border-color:#fff}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+  .eyebrow{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.32em;text-transform:uppercase}
+  .rule{width:56px;height:1px;background:currentColor;opacity:.55;margin:22px 0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--sans);font-weight:700;
+    font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;padding:17px 40px;cursor:pointer;border:1px solid transparent;
+    transition:all .3s ease;white-space:nowrap}
+  .btn-solid{background:var(--ivory);color:var(--basil);border-color:var(--ivory)} .btn-solid:hover{background:transparent;color:var(--ivory)}
+  .btn-line{background:transparent;color:var(--ivory);border-color:rgba(247,243,234,.5)} .btn-line:hover{border-color:var(--ivory);background:rgba(247,243,234,.08)}
+  .btn-dark{background:var(--basil);color:var(--ivory);border-color:var(--basil)} .btn-dark:hover{background:var(--basil-d)}
+  .btn-dline{background:transparent;color:var(--basil);border-color:var(--basil)} .btn-dline:hover{background:var(--basil);color:var(--ivory)}
 
-  /* ---------- HEADER ---------- */
-  header{position:fixed;inset:0 0 auto 0;z-index:1000;height:var(--head-h);background:var(--basil);
-    display:flex;align-items:center;box-shadow:0 1px 0 rgba(0,0,0,.12)}
+  /* HEADER — transparent over hero, refined */
+  header{position:fixed;inset:0 0 auto 0;z-index:1000;height:var(--head-h);display:flex;align-items:center;
+    transition:background .4s ease,box-shadow .4s ease}
+  header.solid{background:var(--basil);box-shadow:0 1px 0 rgba(0,0,0,.15)}
   header .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
-  .logo{font-family:var(--serif);color:#fff;text-decoration:none;line-height:1.05}
-  .logo .b{font-size:19px;letter-spacing:3px;font-weight:400;text-transform:uppercase}
-  .logo .s{display:block;font-family:var(--sans);font-size:8px;letter-spacing:4px;color:rgba(255,255,255,.72);text-transform:uppercase;margin-top:2px}
-  .hnav{display:flex;align-items:center;gap:26px}
-  .hnav a.link{font-family:var(--sans);color:rgba(255,255,255,.82);text-decoration:none;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
-  .hnav a.link:hover{color:#fff}
-  .hcall{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.04em}
-  @media(max-width:900px){.hnav a.link{display:none}}
+  .logo{color:#fff;line-height:1}
+  .logo .b{font-family:var(--serif);font-size:20px;letter-spacing:4px;text-transform:uppercase}
+  .logo .s{display:block;font-family:var(--sans);font-size:8px;letter-spacing:5px;color:rgba(255,255,255,.7);text-transform:uppercase;margin-top:3px}
+  .hnav{display:flex;align-items:center;gap:30px}
+  .hnav a.lk{color:rgba(255,255,255,.85);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+  .hnav a.lk:hover{color:#fff}
+  .hnav .call{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.08em}
+  .ic{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5}
+  @media(max-width:960px){.hnav a.lk{display:none}}
 
-  /* ---------- HERO ---------- */
-  .hero{padding-top:var(--head-h);background:var(--basil)}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:0;align-items:stretch}
-  .hero-copy{padding:56px 48px 56px 0;display:flex;flex-direction:column;justify-content:center}
-  .hero-copy .eyebrow{margin-bottom:18px}
-  .hero h1{color:#fff;font-size:clamp(34px,4.4vw,60px);line-height:1.06}
+  /* HERO — cinematic full-bleed */
+  .hero{position:relative;height:100svh;min-height:620px;display:flex;align-items:flex-end;overflow:hidden}
+  .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;z-index:0}
+  .hero .scrim{position:absolute;inset:0;z-index:1;
+    background:linear-gradient(to top, rgba(20,32,26,.92) 0%, rgba(20,32,26,.45) 34%, rgba(20,32,26,.12) 62%, rgba(20,32,26,.34) 100%)}
+  .hero .hero-in{position:relative;z-index:2;width:100%;padding-bottom:64px}
+  .hero .eyebrow{color:var(--mint);margin-bottom:22px}
+  .hero h1{color:#fff;font-size:clamp(42px,7.2vw,96px);line-height:1.02;letter-spacing:0}
   .hero h1 em{font-style:italic;color:var(--mint)}
-  .hero .sub{color:rgba(255,255,255,.82);font-size:16px;margin:22px 0 6px;max-width:46ch}
-  .hero .facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:20px;color:#fff}
-  .hero .facts b{font-family:var(--serif);font-size:22px;font-weight:400}
-  .hero .facts span{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint)}
-  .hero-visual{position:relative;min-height:420px}
-  .hero-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
-  /* hero lead form card */
-  .lead-card{background:var(--paper);border-radius:3px;padding:26px 26px 22px;box-shadow:0 24px 60px rgba(20,35,28,.28);
-    align-self:center;margin:38px 0}
-  .lead-card .lc-lead{font-family:var(--serif);font-size:21px;color:var(--granite-d)}
-  .lead-card .lc-note{font-size:12px;color:var(--granite);opacity:.8;margin-top:2px;margin-bottom:14px}
-  .fld{margin-bottom:11px}
-  .fld label{display:block;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--granite);font-weight:700;margin-bottom:5px}
-  .fld input,.fld select{width:100%;font-family:var(--sans);font-size:16px;color:var(--granite-d);background:#fff;
-    border:1px solid var(--line);border-radius:2px;padding:12px 13px;outline:none}
+  .hero .sub{color:rgba(247,243,234,.9);font-size:clamp(15px,1.5vw,19px);max-width:52ch;margin:26px 0 30px;line-height:1.6}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .scroll-cue{position:absolute;right:34px;bottom:40px;z-index:2;color:rgba(255,255,255,.6);font-size:9px;letter-spacing:.3em;text-transform:uppercase;writing-mode:vertical-rl}
+
+  /* STAT BAND */
+  .stats{background:var(--basil);color:#fff}
+  .stats .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:26px 32px}
+  .stat{display:flex;flex-direction:column}
+  .stat b{font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);font-weight:400}
+  .stat span{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mint);margin-top:3px}
+  .stat.rera b{font-size:15px;letter-spacing:.5px}
+  .band{height:5px;background:var(--zest)}
+
+  /* SECTIONS */
+  .sec{padding:clamp(64px,9vw,120px) 0}
+  .sec.ivory{background:var(--ivory)} .sec.ivory2{background:var(--ivory-2)}
+  .sec.basil{background:var(--basil);color:var(--ivory)} .sec.basil h2{color:#fff} .sec.basil .eyebrow{color:var(--mint)}
+  .eyebrow.dk{color:var(--basil)}
+  h2{font-size:clamp(30px,4.4vw,54px);line-height:1.1;color:var(--basil)}
+  .lede{font-size:clamp(15px,1.4vw,18px);line-height:1.8;max-width:60ch;color:var(--granite)}
+  .sec.basil .lede{color:rgba(247,243,234,.82)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+  .split .txt{padding:clamp(48px,7vw,110px) clamp(32px,5vw,90px);display:flex;flex-direction:column;justify-content:center}
+  .split .img{position:relative;min-height:440px}
+  .split .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .split .eyebrow{margin-bottom:18px}
+  .split h2{margin-bottom:8px}
+  .split .lede{margin:18px 0 30px}
+
+  /* FULL-BLEED IMAGE BREAK */
+  .bleed{position:relative;height:64vh;min-height:420px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+  .bleed img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%;z-index:0}
+  .bleed .scrim{position:absolute;inset:0;z-index:1;background:rgba(20,32,26,.42)}
+  .bleed .q{position:relative;z-index:2;color:#fff;max-width:760px;padding:0 28px}
+  .bleed .q .eyebrow{color:var(--mint);display:block;margin-bottom:16px}
+  .bleed .q p{font-family:var(--serif);font-size:clamp(22px,3.2vw,40px);line-height:1.28;font-style:italic}
+
+  /* PRICING — elegant dark cards */
+  .price{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+  .pcard{border:1px solid var(--line-dk);background:rgba(255,255,255,.03);padding:0;overflow:hidden}
+  .pcard .ph{padding:26px 30px 22px;border-bottom:1px solid var(--line-dk)}
+  .pcard .ph .cfg{font-family:var(--serif);font-size:30px;color:#fff}
+  .pcard .ph .ar{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint);margin-top:6px}
+  .pcard .rows{padding:8px 30px 4px}
+  .pcard .r{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line-dk);font-size:14.5px}
+  .pcard .r:last-child{border-bottom:none}
+  .pcard .r .k{color:var(--mint);letter-spacing:.04em}
+  .pcard .r .v{color:#fff;font-family:var(--serif)}
+  .pcard .pcta{padding:20px 30px 26px}
+  .pcard .pcta .btn{width:100%}
+  .note{font-size:12px;color:rgba(247,243,234,.6);margin-top:20px}
+
+  /* AMENITIES — refined, left-aligned */
+  .amen{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+  .amen .a{background:var(--ivory);padding:26px 22px;min-height:118px;display:flex;flex-direction:column;gap:12px}
+  .amen .a svg{width:26px;height:26px;stroke:var(--basil);fill:none;stroke-width:1.3}
+  .amen .a .nm{font-family:var(--serif);font-size:17px;color:var(--basil);line-height:1.3}
+  @media(max-width:900px){.amen{grid-template-columns:repeat(2,1fr)}}
+
+  /* FLOOR PLANS */
+  .fps{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+  .fp{border:1px solid var(--line-dk);padding:34px}
+  .fp h3{font-size:24px;color:#fff;margin-bottom:20px}
+  .fp .lk{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+  .fp .lk a{color:var(--mint);font-size:13px;letter-spacing:.08em;border-bottom:1px solid rgba(197,221,209,.4);padding:6px 0;min-height:44px;display:inline-flex;align-items:center}
+  .fp .lk a:hover{color:#fff;border-color:#fff}
+
+  /* LOCATION */
+  .loc{list-style:none;margin:24px 0 0;padding:0}
+  .loc li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px;color:var(--basil)}
+  .loc li em{font-family:var(--serif);font-style:normal;color:var(--flax);font-size:18px}
+
+  /* GALLERY */
+  .gal{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:44px}
+  .gal .col{display:grid;gap:14px}
+  .gal img{width:100%;height:100%;object-fit:cover}
+  .gal .big{height:520px} .gal .sm{height:253px}
+  @media(max-width:820px){.gal{grid-template-columns:1fr}.gal .big,.gal .sm{height:260px}}
+
+  /* ENQUIRE — elegant form */
+  .enq{background:var(--basil)}
+  .enq .wrap{display:grid;grid-template-columns:1fr .82fr;gap:clamp(40px,6vw,90px);align-items:center;padding-top:clamp(64px,9vw,110px);padding-bottom:clamp(64px,9vw,110px)}
+  .enq .eyebrow{color:var(--mint)}
+  .enq h2{color:#fff;margin:14px 0}
+  .form-card{background:var(--ivory);padding:38px 36px 32px;box-shadow:0 30px 70px rgba(0,0,0,.28)}
+  .form-card .fh{font-family:var(--serif);font-size:25px;color:var(--basil)}
+  .form-card .fn{font-size:12.5px;color:var(--granite);margin:4px 0 22px}
+  .fld{margin-bottom:14px}
+  .fld label{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--granite);font-weight:700;margin-bottom:6px}
+  .fld input,.fld select{width:100%;font-family:var(--sans);font-size:16px;color:var(--basil);background:#fff;border:1px solid var(--line);padding:14px 15px;outline:none;border-radius:0}
   .fld input:focus,.fld select:focus{border-color:var(--basil)}
   .fld input.invalid,.fld select.invalid{border-color:var(--terracotta)}
-  .lead-card .btn{width:100%;margin-top:4px}
-  .lead-card .cf-status{font-size:12.5px;line-height:1.45;margin-top:10px;min-height:1px}
-  .cf-status.ok{color:var(--basil)} .cf-status.err{color:var(--terracotta)}
-  .lead-card .reassure{font-size:11px;color:var(--granite);opacity:.75;margin-top:10px;line-height:1.5}
+  .form-card .btn{width:100%;margin-top:6px}
+  .cf-status{font-size:12.5px;line-height:1.5;margin-top:12px}
+  .cf-status.ok{color:var(--basil-l)} .cf-status.err{color:var(--terracotta)}
+  .reassure{font-size:11px;color:var(--granite);opacity:.8;margin-top:12px;line-height:1.5}
 
-  /* ---------- TRUST STRIP ---------- */
-  .trust{background:var(--white);border-bottom:1px solid var(--line)}
-  .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 40px;align-items:center;justify-content:center;padding:16px 24px}
-  .trust .t{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--granite);letter-spacing:.02em}
-  .trust .t b{color:var(--granite-d);font-weight:700}
-  .trust .dot{width:5px;height:5px;border-radius:50%;background:var(--basil);opacity:.5}
+  /* FOOTER */
+  footer{background:var(--basil-d);color:rgba(247,243,234,.66);font-size:12px;line-height:1.75}
+  footer .wrap{padding:52px 32px 38px}
+  footer .ftop{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--line-dk)}
+  footer .lbl{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mint);margin-bottom:9px}
+  footer .wl{font-family:var(--serif);color:#fff;font-size:24px;letter-spacing:2px}
+  footer .pn{color:#fff;font-family:var(--serif);font-size:17px;margin-bottom:7px}
+  footer .legal{margin-top:22px;font-size:11px;color:rgba(247,243,234,.5)}
 
-  /* ---------- SECTION SHELL ---------- */
-  .sec{padding:82px 0}
-  .sec.mint{background:var(--mint)}
-  .sec.basil{background:var(--basil)} .sec.basil h2,.sec.basil h3{color:#fff}
-  .sec.basil .lede{color:rgba(255,255,255,.85)}
-  .sec-head{max-width:60ch;margin-bottom:34px}
-  .sec-head .eyebrow{margin-bottom:12px}
-  h2{font-size:clamp(26px,3.2vw,38px);line-height:1.14}
-  .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
-  .two-col img{border-radius:3px;aspect-ratio:4/3;object-fit:cover;object-position:center}
-
-  /* pricing */
-  .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:8px}
-  .price-card{background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden}
-  .price-card .pc-top{background:var(--basil);color:#fff;padding:16px 22px}
-  .price-card .pc-top .cfg{font-family:var(--serif);font-size:24px}
-  .price-card .pc-top .area{font-size:12px;color:var(--mint);letter-spacing:.06em;margin-top:2px}
-  .price-card table{width:100%;border-collapse:collapse}
-  .price-card td{padding:12px 22px;border-bottom:1px solid var(--line);font-size:14px}
-  .price-card td:first-child{color:var(--granite);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;width:42%}
-  .price-card td:last-child{color:var(--granite-d)}
-  .price-card tr:last-child td{border-bottom:none}
-  .price-card .pc-cta{padding:16px 22px}
-
-  /* amenities — LEFT-aligned icon grid (never a centered list) */
-  .amen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden}
-  .amen{background:#fff;padding:20px 22px;display:flex;gap:12px;align-items:flex-start}
-  .amen .ic{width:22px;height:22px;flex:none;color:var(--basil);margin-top:2px}
-  .amen .nm{font-size:14px;color:var(--granite-d);line-height:1.4}
-  @media(max-width:820px){.amen-grid{grid-template-columns:repeat(2,1fr)}}
-
-  /* floor plans */
-  .fp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
-  .fp{background:#fff;border:1px solid var(--line);border-radius:3px;padding:24px}
-  .fp h3{font-size:20px;margin-bottom:14px}
-  .fp .rows{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:16px}
-  .fp .rows a{font-size:13px;color:var(--basil);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:4px;min-height:44px;display:inline-flex;align-items:center}
-  .fp .rows a:hover{border-color:var(--basil)}
-
-  /* location */
-  .loc-list{list-style:none;margin:0;padding:0}
-  .loc-list li{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--granite-d)}
-  .loc-list li span{font-family:var(--serif);color:var(--basil)}
-
-  /* gallery */
-  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
-  .gal img{aspect-ratio:4/3;object-fit:cover;border-radius:3px}
-  @media(max-width:820px){.gal{grid-template-columns:1fr 1fr}}
-
-  /* final CTA form */
-  .final .wrap{display:grid;grid-template-columns:1fr .8fr;gap:48px;align-items:center}
-  .final .lead-card{margin:0;box-shadow:0 24px 60px rgba(0,0,0,.22)}
-
-  /* zest accent band — the Westin "Color Band" motif (Zest on Basil is approved) */
-  .band{height:6px;background:var(--zest)}
-
-  /* footer */
-  footer{background:var(--basil-d);color:rgba(255,255,255,.72);font-size:12px;line-height:1.7}
-  footer .wrap{padding:44px 24px 34px}
-  footer .f-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:22px;padding-bottom:24px;border-bottom:1px solid var(--line-on-dark)}
-  footer .developed .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);margin-bottom:8px}
-  footer .developed .wl{font-family:var(--serif);color:#fff;font-size:22px;letter-spacing:1px}
-  footer .legal{margin-top:22px;color:rgba(255,255,255,.55);font-size:11px;max-width:100%}
-
-  /* ---------- STICKY MOBILE CTA BAR ---------- */
+  /* STICKY MOBILE BAR */
   .mbar{display:none}
-  @media(max-width:820px){
-    .hero-grid{grid-template-columns:1fr}
-    .hero-copy{padding:40px 0 30px}
-    .hero-visual{min-height:280px;order:-1}
-    .lead-card{margin:0 0 40px}
-    .two-col{grid-template-columns:1fr;gap:26px}
-    .price-grid{grid-template-columns:1fr}
-    .fp-grid{grid-template-columns:1fr}
-    .final .wrap{grid-template-columns:1fr}
-    .sec{padding:56px 0}
+  @media(max-width:860px){
+    .split{grid-template-columns:1fr} .split .img{min-height:300px;order:-1}
+    .price{grid-template-columns:1fr} .fps{grid-template-columns:1fr}
+    .enq .wrap{grid-template-columns:1fr}
+    .stats .wrap{gap:18px 26px} .stat.rera{width:100%}
     body{padding-bottom:56px}
-    /* thumb-first: 16px inputs already; enlarge tap targets */
-    .fld input,.fld select{font-size:16px;padding:14px 13px}
-    .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:1200;background:var(--basil);
-      border-top:1px solid rgba(255,255,255,.14);box-shadow:0 -6px 20px rgba(0,0,0,.3)}
-    .mbar a{flex:1;min-height:54px;display:flex;align-items:center;justify-content:center;gap:7px;
-      color:#fff;text-decoration:none;font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.04em;
-      border-left:1px solid rgba(255,255,255,.14)}
+    .scroll-cue{display:none}
+    .fld input,.fld select{font-size:16px}
+    .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:1200;background:var(--basil);border-top:1px solid rgba(255,255,255,.14);box-shadow:0 -6px 20px rgba(0,0,0,.3)}
+    .mbar a{flex:1;min-height:56px;display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.05em;border-left:1px solid rgba(255,255,255,.14)}
     .mbar a:first-child{border-left:none}
     .mbar .wa{background:#25D366;color:#0b3d1e}
-    .mbar .bk{background:var(--zest);color:var(--granite-d)}
+    .mbar .bk{background:var(--zest);color:var(--basil)}
   }
-  .svg-ic{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6}
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
+<header id="hdr">
   <div class="wrap">
     <a class="logo" href="#top"><span class="b">The Westin Residences</span><span class="s">Gurugram · By Whiteland</span></a>
     <nav class="hnav">
-      <a class="link" href="#residences">Residences</a>
-      <a class="link" href="#pricing">Pricing</a>
-      <a class="link" href="#amenities">Amenities</a>
-      <a class="link" href="#location">Location</a>
-      <a class="hcall" href="tel:+918448190926">
-        <svg class="svg-ic" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7A2 2 0 0 1 22 16.9z"/></svg>
-        Call
-      </a>
+      <a class="lk" href="#residences">Residences</a>
+      <a class="lk" href="#pricing">Pricing</a>
+      <a class="lk" href="#amenities">Amenities</a>
+      <a class="lk" href="#location">Location</a>
+      <a class="call" href="tel:+918448190926"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7A2 2 0 0 1 22 16.9z"/></svg> Call</a>
     </nav>
   </div>
 </header>
-
 <a id="top"></a>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow on-dark">Official developer · Whiteland Corporation</span>
-        <h1>Westin Residences,<br><em>by Marriott</em></h1>
-        <p class="sub">Branded 3 &amp; 4 BHK residences on the Dwarka Expressway, Sector 103, Gurugram — hotel-managed by Westin for effortless ownership and enduring value.</p>
-        <div class="facts">
-          <div><b>From ₹7 Cr</b><span>Starting</span></div>
-          <div><b>2,650–4,300</b><span>Sq. ft.</span></div>
-          <div><b>Dec 2028</b><span>Possession</span></div>
-        </div>
-      </div>
-
-      <!-- hero lead form (above the fold) -->
-      <form id="heroForm" class="lead-card" novalidate>
-        <div class="lc-lead">Get the Price List &amp; Floor Plans</div>
-        <div class="lc-note">On WhatsApp, within minutes.</div>
-        <div class="fld"><label for="hf-name">Full name</label><input id="hf-name" type="text" name="firstName" required autocomplete="name" /></div>
-        <div class="fld"><label for="hf-phone">Phone</label><input id="hf-phone" type="tel" name="phone" required inputmode="tel" autocomplete="tel" /></div>
-        <div class="fld"><label for="hf-cfg">Configuration</label>
-          <select id="hf-cfg" name="residenceType" required>
-            <option value="">Select</option><option>3 BHK Residence</option><option>4 BHK Residence</option><option>Penthouse</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-basil cf-submit">Send me the details</button>
-        <div class="cf-status" role="status" aria-live="polite"></div>
-        <p class="reassure">A Westin relationship manager will call you — private, no spam.</p>
-        <input type="text" name="hp_company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0" />
-      </form>
+  <img fetchpriority="high" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/WestinRes2-4-25-358-Enhanced-NR_Web.webp" alt="The Westin Residences, Gurugram" />
+  <div class="scrim"></div>
+  <div class="hero-in wrap">
+    <span class="eyebrow">Official Developer · Whiteland Corporation</span>
+    <h1>An address<br>operated by <em>Westin</em></h1>
+    <p class="sub">Branded 3 &amp; 4 BHK residences on the Dwarka Expressway, Sector 103, Gurugram — hotel-managed by Marriott, from ₹7 Cr.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#enquire">Request Pricing &amp; Floor Plans</a>
+      <a class="btn btn-line" href="https://wa.me/918448190926?text=Hi%2C%20I%27m%20interested%20in%20The%20Westin%20Residences%2C%20Gurugram.%20Please%20share%20the%20price%20list%20%26%20floor%20plans." target="_blank" rel="noopener">WhatsApp Us</a>
     </div>
   </div>
+  <span class="scroll-cue">Scroll</span>
 </section>
-<div class="band"></div>
 
-<!-- TRUST STRIP (official developer — leverage it) -->
-<div class="trust">
+<!-- STAT BAND -->
+<div class="stats">
   <div class="wrap">
-    <div class="t"><b>Operated by Westin</b> · Marriott International</div>
-    <span class="dot"></span>
-    <div class="t"><b>Developed by Whiteland</b> · Official developer site</div>
-    <span class="dot"></span>
-    <div class="t"><b>HARERA</b> 65, 66 &amp; 67 · Registered</div>
+    <div class="stat"><b>From ₹7 Cr</b><span>Starting Price</span></div>
+    <div class="stat"><b>3 &amp; 4 BHK</b><span>Configurations</span></div>
+    <div class="stat"><b>2,650–4,300</b><span>Sq. Ft.</span></div>
+    <div class="stat"><b>Dec 2028</b><span>Possession</span></div>
+    <div class="stat rera"><b>Operated by Marriott</b><span>HARERA Registered · Whiteland</span></div>
   </div>
 </div>
+<div class="band"></div>
 
-<!-- RESIDENCES / OVERVIEW -->
-<section class="sec" id="residences">
-  <div class="wrap two-col">
-    <div>
-      <div class="sec-head">
-        <span class="eyebrow">The Residences</span>
-        <h2 class="ruled">A hotel-inspired home,<br>managed like a Westin</h2>
-      </div>
-      <p class="lede">Commanding attention from the moment you arrive, the clubhouse is the iconic centrepiece of the residences. Biophilic architecture and a commitment to well-being inspire an unprecedented collection of resort-style amenities — a home that carries the intimacy of family life and the assurance of five-star hospitality.</p>
-      <p style="margin-top:22px"><a class="btn btn-ghost" href="#enquire">Get price &amp; floor plans</a></p>
-    </div>
-    <img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/Whiteland103-ClubDropOff_Web-5.webp" alt="The Westin Residences clubhouse arrival" />
+<!-- THE RESIDENCES -->
+<section class="sec basil split" id="residences" style="padding:0">
+  <div class="txt">
+    <span class="eyebrow">The Residences</span>
+    <div class="rule" style="color:var(--mint)"></div>
+    <h2>A hotel-inspired home,<br>managed like a Westin</h2>
+    <p class="lede">Commanding attention from the moment you arrive, the clubhouse is the iconic centrepiece of the residences. Biophilic architecture and a devotion to well-being shape an unprecedented collection of resort-style amenities — a home that carries the intimacy of family life and the assurance of five-star hospitality.</p>
+    <div><a class="btn btn-line" href="#enquire">Enquire Now</a></div>
+  </div>
+  <div class="img"><img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/Whiteland103-ClubDropOff_Web-5.webp" alt="The Westin Residences clubhouse arrival" /></div>
+</section>
+
+<!-- FULL-BLEED QUOTE -->
+<section class="bleed">
+  <img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/ChatGPT-Image-May-6-2026-03_01_52-PM.webp" alt="Westin residence interior" />
+  <div class="scrim"></div>
+  <div class="q">
+    <span class="eyebrow">Live Among the Invited Few</span>
+    <p>“The 5-star hotel, fused with the deep intimacy of home.”</p>
   </div>
 </section>
 
-<!-- PRICING (clear, labelled, transparent) -->
-<section class="sec mint" id="pricing">
+<!-- PRICING -->
+<section class="sec basil" id="pricing">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Pricing &amp; Configurations</span>
-      <h2 class="ruled">Priced with clarity</h2>
-    </div>
-    <div class="price-grid">
-      <div class="price-card">
-        <div class="pc-top"><div class="cfg">3 BHK Residence</div><div class="area">Approx. 2,650 sq. ft.</div></div>
-        <table>
-          <tr><td>Starting price</td><td>From ₹7 Cr*</td></tr>
-          <tr><td>Carpet area</td><td>≈ 2,650 sq. ft.</td></tr>
-          <tr><td>Possession</td><td>December 2028</td></tr>
-        </table>
-        <div class="pc-cta"><a class="btn btn-basil" href="#enquire" style="width:100%">Get 3 BHK price &amp; plan</a></div>
+    <span class="eyebrow">Pricing &amp; Configurations</span>
+    <div class="rule" style="color:var(--mint)"></div>
+    <h2 style="max-width:16ch">Priced with clarity, not on request</h2>
+    <div class="price">
+      <div class="pcard">
+        <div class="ph"><div class="cfg">3 BHK Residence</div><div class="ar">Approx. 2,650 sq. ft.</div></div>
+        <div class="rows">
+          <div class="r"><span class="k">Starting Price</span><span class="v">From ₹7 Cr*</span></div>
+          <div class="r"><span class="k">Carpet Area</span><span class="v">≈ 2,650 sq. ft.</span></div>
+          <div class="r"><span class="k">Possession</span><span class="v">Dec 2028</span></div>
+        </div>
+        <div class="pcta"><a class="btn btn-solid" href="#enquire">Get 3 BHK Price &amp; Plan</a></div>
       </div>
-      <div class="price-card">
-        <div class="pc-top"><div class="cfg">4 BHK Residence</div><div class="area">Approx. 4,300 sq. ft.</div></div>
-        <table>
-          <tr><td>Starting price</td><td>On request*</td></tr>
-          <tr><td>Carpet area</td><td>≈ 4,300 sq. ft.</td></tr>
-          <tr><td>Possession</td><td>December 2028</td></tr>
-        </table>
-        <div class="pc-cta"><a class="btn btn-basil" href="#enquire" style="width:100%">Get 4 BHK price &amp; plan</a></div>
+      <div class="pcard">
+        <div class="ph"><div class="cfg">4 BHK Residence</div><div class="ar">Approx. 4,300 sq. ft.</div></div>
+        <div class="rows">
+          <div class="r"><span class="k">Starting Price</span><span class="v">On Request*</span></div>
+          <div class="r"><span class="k">Carpet Area</span><span class="v">≈ 4,300 sq. ft.</span></div>
+          <div class="r"><span class="k">Possession</span><span class="v">Dec 2028</span></div>
+        </div>
+        <div class="pcta"><a class="btn btn-solid" href="#enquire">Get 4 BHK Price &amp; Plan</a></div>
       </div>
     </div>
-    <p style="font-size:12px;color:var(--granite);margin-top:16px">*Indicative starting prices. Final pricing shared on enquiry with the current price sheet.</p>
+    <p class="note">*Indicative starting price. The current price sheet is shared on enquiry.</p>
   </div>
 </section>
 
-<!-- AMENITIES (left-aligned icon grid) -->
-<section class="sec" id="amenities">
+<!-- AMENITIES -->
+<section class="sec ivory" id="amenities">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Clubhouse &amp; Amenities</span>
-      <h2 class="ruled">World-class amenities, centred<br>on wellness, recreation and dining</h2>
-    </div>
-    <div class="amen-grid" id="amenGrid"></div>
+    <span class="eyebrow dk">Clubhouse &amp; Amenities</span>
+    <div class="rule" style="color:var(--basil)"></div>
+    <h2 style="max-width:20ch">World-class amenities, centred on wellness, recreation &amp; dining</h2>
+    <div class="amen" id="amenGrid"></div>
   </div>
 </section>
 
 <!-- FLOOR PLANS -->
-<section class="sec mint" id="plans">
+<section class="sec basil" id="plans">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Floor Plans</span>
-      <h2 class="ruled">Made for mindful living<br>and effortless comfort</h2>
-    </div>
-    <div class="fp-grid">
-      <div class="fp"><h3>3 BHK Floor Plans</h3>
-        <div class="rows"><a href="#enquire">Core plan</a><a href="#enquire">Large plan</a><a href="#enquire">Small plan</a></div>
-        <a class="btn btn-ghost" href="#enquire">Download 3 BHK plans</a></div>
-      <div class="fp"><h3>4 BHK Floor Plans</h3>
-        <div class="rows"><a href="#enquire">Core plan</a><a href="#enquire">Large plan</a><a href="#enquire">Small plan</a></div>
-        <a class="btn btn-ghost" href="#enquire">Download 4 BHK plans</a></div>
+    <span class="eyebrow">Floor Plans</span>
+    <div class="rule" style="color:var(--mint)"></div>
+    <h2>Made for mindful living</h2>
+    <div class="fps">
+      <div class="fp"><h3>3 BHK Floor Plans</h3><div class="lk"><a href="#enquire">Core Plan</a><a href="#enquire">Large Plan</a><a href="#enquire">Small Plan</a></div><a class="btn btn-line" href="#enquire">Download 3 BHK Plans</a></div>
+      <div class="fp"><h3>4 BHK Floor Plans</h3><div class="lk"><a href="#enquire">Core Plan</a><a href="#enquire">Large Plan</a><a href="#enquire">Small Plan</a></div><a class="btn btn-line" href="#enquire">Download 4 BHK Plans</a></div>
     </div>
   </div>
 </section>
 
 <!-- LOCATION -->
-<section class="sec" id="location">
-  <div class="wrap two-col">
-    <div>
-      <div class="sec-head">
-        <span class="eyebrow">Location</span>
-        <h2 class="ruled">Sector 103, on the<br>Dwarka Expressway</h2>
-      </div>
-      <ul class="loc-list">
-        <li><span>01</span> Minutes from the Dwarka Expressway &amp; NPR interchange</li>
-        <li><span>02</span> Direct connectivity to IGI Airport &amp; Aerocity</li>
-        <li><span>03</span> Close to JW Marriott, The Oberoi &amp; The Leela, Gurugram</li>
-        <li><span>04</span> Established schools, hospitals and retail within reach</li>
-      </ul>
-      <p style="margin-top:22px"><a class="btn btn-ghost" href="#enquire">Download location brochure</a></p>
-    </div>
-    <img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/ChatGPT-Image-May-6-2026-03_01_52-PM.webp" alt="Interior of a Westin residence" />
+<section class="sec ivory2 split" id="location" style="padding:0">
+  <div class="txt">
+    <span class="eyebrow dk">Location</span>
+    <div class="rule" style="color:var(--basil)"></div>
+    <h2>Sector 103,<br>Dwarka Expressway</h2>
+    <ul class="loc">
+      <li><em>01</em> On the Dwarka Expressway, minutes from the NPR interchange</li>
+      <li><em>02</em> Direct connectivity to IGI Airport &amp; Aerocity</li>
+      <li><em>03</em> Near JW Marriott, The Oberoi &amp; The Leela, Gurugram</li>
+      <li><em>04</em> Established schools, hospitals &amp; retail within reach</li>
+    </ul>
+    <div style="margin-top:26px"><a class="btn btn-dline" href="#enquire">Download Location Brochure</a></div>
   </div>
+  <div class="img"><img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/ChatGPT-Image-May-6-2026-02_58_24-PM.webp" alt="Westin residence lifestyle" /></div>
 </section>
 
 <!-- GALLERY -->
-<section class="sec mint" id="gallery">
+<section class="sec ivory" id="gallery">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Gallery</span><h2 class="ruled">A glimpse into grandeur</h2></div>
+    <span class="eyebrow dk">Gallery</span>
+    <div class="rule" style="color:var(--basil)"></div>
+    <h2>A glimpse into grandeur</h2>
     <div class="gal">
-      <img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/WestinRes2-4-25-358-Enhanced-NR_Web.webp" alt="Westin Residences landscape" />
-      <img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/Whiteland103-ClubDropOff_Web-5.webp" alt="Clubhouse arrival" />
-      <img loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/ChatGPT-Image-May-6-2026-02_58_24-PM.webp" alt="Interior detail" />
+      <img class="big" loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/WestinRes2-4-25-358-Enhanced-NR_Web.webp" alt="Westin Residences landscape" />
+      <div class="col">
+        <img class="sm" loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/Whiteland103-ClubDropOff_Web-5.webp" alt="Clubhouse arrival" />
+        <img class="sm" loading="lazy" decoding="async" src="https://westinresidency.co.in/wp-content/uploads/2026/05/ChatGPT-Image-May-6-2026-03_01_52-PM.webp" alt="Interior detail" />
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="sec basil final" id="enquire">
+<!-- ENQUIRE -->
+<section class="enq" id="enquire">
   <div class="wrap">
     <div>
-      <span class="eyebrow on-dark">Register your interest</span>
-      <h2 class="ruled on-dark" style="margin-top:12px">Come home to a<br>Marriott-branded address</h2>
-      <p class="lede" style="margin-top:18px">Share your details and a Westin relationship manager will send the price list &amp; floor plans on WhatsApp, and call you shortly.</p>
+      <span class="eyebrow">Register Your Interest</span>
+      <div class="rule" style="color:var(--mint)"></div>
+      <h2>Come home to a<br>Marriott-branded address</h2>
+      <p class="lede" style="color:rgba(247,243,234,.82);margin-top:14px">Share your details and a Westin relationship manager will send the price list &amp; floor plans on WhatsApp — and call you shortly.</p>
     </div>
-    <form id="mainForm" class="lead-card" novalidate>
-      <div class="lc-lead">Get the Price List &amp; Floor Plans</div>
-      <div class="lc-note">On WhatsApp, within minutes.</div>
-      <div class="fld"><label for="mf-name">Full name</label><input id="mf-name" type="text" name="firstName" required autocomplete="name" /></div>
+    <form id="mainForm" class="form-card" novalidate>
+      <div class="fh">Get the Price List &amp; Floor Plans</div>
+      <div class="fn">On WhatsApp, within minutes.</div>
+      <div class="fld"><label for="mf-name">Full Name</label><input id="mf-name" type="text" name="firstName" required autocomplete="name" /></div>
       <div class="fld"><label for="mf-phone">Phone</label><input id="mf-phone" type="tel" name="phone" required inputmode="tel" autocomplete="tel" /></div>
       <div class="fld"><label for="mf-cfg">Configuration</label>
-        <select id="mf-cfg" name="residenceType" required>
-          <option value="">Select</option><option>3 BHK Residence</option><option>4 BHK Residence</option><option>Penthouse</option>
-        </select>
+        <select id="mf-cfg" name="residenceType" required><option value="">Select</option><option>3 BHK Residence</option><option>4 BHK Residence</option><option>Penthouse</option></select>
       </div>
-      <button type="submit" class="btn btn-basil cf-submit">Send me the details</button>
+      <button type="submit" class="btn btn-dark cf-submit">Send Me the Details</button>
       <div class="cf-status" role="status" aria-live="polite"></div>
       <p class="reassure">By submitting you agree to be contacted about this project. Handled by Whiteland Corporation.</p>
       <input type="text" name="hp_company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0" />
@@ -391,30 +364,25 @@
   </div>
 </section>
 
-<!-- FOOTER (official developer; Marriott licence disclaimer required; NO channel-partner text) -->
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
-    <div class="f-top">
-      <div class="developed">
-        <div class="lbl">Developed by</div>
-        <div class="wl">WHITELAND</div>
-        <div style="font-size:11px;color:rgba(255,255,255,.55);margin-top:4px">Global Outlook · Indian Values</div>
-      </div>
-      <div style="max-width:520px;color:rgba(255,255,255,.72)">
-        <div style="color:#fff;font-family:var(--serif);font-size:16px;margin-bottom:8px">The Westin Residences, Gurugram</div>
+    <div class="ftop">
+      <div><div class="lbl">Developed By</div><div class="wl">WHITELAND</div><div style="font-size:11px;color:rgba(247,243,234,.5);margin-top:5px">Global Outlook · Indian Values</div></div>
+      <div style="max-width:520px">
+        <div class="pn">The Westin Residences, Gurugram</div>
         Sector 103, Dwarka Expressway, Gurugram, Haryana 122001 · <a href="tel:+918448190926" style="color:#fff">+91 84481 90926</a>
       </div>
     </div>
     <div class="legal">
-      HARERA NO.: 65, 66 &amp; 67 | DATED: 18.06.2024 · HARERA NO.: 52 &amp; 53 | DATED: 16.05.2025 · LICENSE NO.: 263 OF 2023 | 12.12.2023 · LICENSE NO.: 158 OF 2024 | 20.11.2024 · Website: haryanarera.gov.in ·
-      Project name: Urban Resort · Promoter: Whiteland Corporation Pvt. Ltd. · CIN: U70109HR2021PTC092905.
+      HARERA NO.: 65, 66 &amp; 67 | 18.06.2024 · HARERA NO.: 52 &amp; 53 | 16.05.2025 · LICENSE NO.: 263 OF 2023 · LICENSE NO.: 158 OF 2024 · haryanarera.gov.in · Project: Urban Resort · Promoter: Whiteland Corporation Pvt. Ltd. · CIN: U70109HR2021PTC092905.
       <br><br>
       The project “Urban Resort” is also known as “Westin Residences, Gurugram” pursuant to a limited licence granted by the Marriott companies to the promoter for use of the “Westin” trademarks. The project is solely developed, promoted, marketed and sold by the promoter and is not owned, developed, promoted or sold by Marriott International, Inc. or its affiliates. Images are an architect’s impression and not to scale.
     </div>
   </div>
 </footer>
 
-<!-- STICKY MOBILE CTA BAR -->
+<!-- STICKY MOBILE BAR -->
 <nav class="mbar" aria-label="Quick contact">
   <a class="cl" href="tel:+918448190926">📞 Call</a>
   <a class="wa" href="https://wa.me/918448190926?text=Hi%2C%20I%27m%20interested%20in%20The%20Westin%20Residences%2C%20Gurugram.%20Please%20share%20the%20price%20list%20%26%20floor%20plans." target="_blank" rel="noopener">WhatsApp</a>
@@ -422,49 +390,40 @@
 </nav>
 
 <script>
-  // amenities (left-aligned grid, not a centered list)
-  var AMEN = ["Guest Suites","Three-Meal Restaurant","Multi-Cuisine Dining","Private Dining Rooms","Café &amp; Bar","Ballroom (300 pax)",
-    "Business Centre","Gymnasium","Indoor All-Weather Pool","Yoga Studio &amp; Deck","Squash &amp; Badminton","Ayurveda &amp; Treatment Rooms"];
-  var LEAF = '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21c6-2 8-7 8-13V4h-4C10 4 5 6 3 12c0 0 4-1 7 1"/><path d="M3 21c0-6 3-9 9-11"/></svg>';
-  document.getElementById('amenGrid').innerHTML = AMEN.map(function(a){return '<div class="amen">'+LEAF+'<div class="nm">'+a+'</div></div>';}).join('');
+  // header turns solid on scroll
+  var hdr=document.getElementById('hdr');
+  addEventListener('scroll',function(){ hdr.classList.toggle('solid', scrollY>60); },{passive:true});
 
-  // ---- lead form wiring (replace LEAD_ENDPOINT with Whiteland's CRM/Apps Script) ----
-  var LEAD_ENDPOINT = ""; // TODO: Whiteland lead endpoint
-  function fireLead(data){
-    try{ if(window.fbq) fbq('track','Lead',{content_name:data.residenceType||'Residence Enquiry'}); }catch(e){}
-    try{ if(window.gtag) gtag('event','generate_lead',{currency:'INR',value:0}); }catch(e){}
-  }
-  function wire(form){
-    if(!form) return;
-    var status=form.querySelector('.cf-status'), btn=form.querySelector('.cf-submit'), label=btn.textContent;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      if(form.elements['hp_company'] && form.elements['hp_company'].value) return; // honeypot
-      var ok=true;
-      [['firstName',function(v){return v.trim().length>1;}],['phone',function(v){return v.replace(/\D/g,'').length>=7;}],['residenceType',function(v){return !!v;}]]
-        .forEach(function(p){var f=form.elements[p[0]]; if(!f)return; var bad=!p[1](f.value); f.classList.toggle('invalid',bad); if(bad)ok=false;});
-      if(!ok){ status.className='cf-status err'; status.textContent='Please enter your name, a valid phone number, and select a configuration.'; return; }
-      btn.disabled=true; btn.textContent='Sending…';
-      var data={firstName:form.elements['firstName'].value, phone:form.elements['phone'].value, residenceType:form.elements['residenceType'].value,
-        page_url:location.href, referrer:document.referrer||''};
-      fireLead(data);
-      var done=function(){ status.className='cf-status ok';
-        status.textContent='Thank you — we’re sending the price list & floor plans to your WhatsApp now, and a Westin relationship manager will call you shortly.';
-        btn.textContent='On its way ✓'; form.reset(); };
-      if(LEAD_ENDPOINT){ fetch(LEAD_ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(done).catch(done); }
-      else { done(); } // no endpoint yet — still confirms + fires pixels
-    });
-  }
-  wire(document.getElementById('heroForm'));
+  // amenities grid
+  var AMEN=[["Grand Clubhouse","M3 3l9 7 9-7M3 21V8l9 7 9-7v13"],["All-Weather Indoor Pool","M2 16c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2M2 12c2 0 2 2 4 2s2-2 4-2"],
+    ["Gymnasium","M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"],["Yoga &amp; Wellness","M12 5a2 2 0 1 0 0-.1M12 8v6M6 21l6-7 6 7M6 12h12"],
+    ["Fine Dining","M6 3v8a2 2 0 0 0 4 0V3M8 11v10M17 3c-1.5 1-2 3-2 5s.5 3 2 3v10"],["Ballroom (300 pax)","M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6"],
+    ["Squash &amp; Badminton","M4 20l7-7M13 11a4 4 0 1 0 0-.1M13 11l3 3"],["Ayurveda &amp; Spa","M12 21c5-3 7-7 7-11a7 7 0 0 0-14 0c0 4 2 8 7 11z"]];
+  document.getElementById('amenGrid').innerHTML=AMEN.map(function(a){
+    return '<div class="a"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="'+a[1]+'"/></svg><div class="nm">'+a[0]+'</div></div>';}).join('');
+
+  // form wiring
+  var LEAD_ENDPOINT=""; // TODO: Whiteland CRM / Apps Script
+  function fireLead(d){try{if(window.fbq)fbq('track','Lead',{content_name:d.residenceType||'Enquiry'});}catch(e){}try{if(window.gtag)gtag('event','generate_lead',{currency:'INR',value:0});}catch(e){}}
+  function wire(f){if(!f)return;var s=f.querySelector('.cf-status'),b=f.querySelector('.cf-submit');
+    f.addEventListener('submit',function(e){e.preventDefault();
+      if(f.elements['hp_company']&&f.elements['hp_company'].value)return;
+      var ok=true;[['firstName',function(v){return v.trim().length>1;}],['phone',function(v){return v.replace(/\D/g,'').length>=7;}],['residenceType',function(v){return !!v;}]]
+        .forEach(function(p){var el=f.elements[p[0]];if(!el)return;var bad=!p[1](el.value);el.classList.toggle('invalid',bad);if(bad)ok=false;});
+      if(!ok){s.className='cf-status err';s.textContent='Please enter your name, a valid phone number and select a configuration.';return;}
+      b.disabled=true;b.textContent='Sending…';
+      var d={firstName:f.elements['firstName'].value,phone:f.elements['phone'].value,residenceType:f.elements['residenceType'].value,page_url:location.href,referrer:document.referrer||''};
+      fireLead(d);
+      var done=function(){s.className='cf-status ok';s.textContent='Thank you — we’re sending the price list & floor plans to your WhatsApp now, and a Westin relationship manager will call you shortly.';b.textContent='On its way ✓';f.reset();};
+      if(LEAD_ENDPOINT){fetch(LEAD_ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(d)}).then(done).catch(done);}else{done();}
+    });}
   wire(document.getElementById('mainForm'));
 
-  // WhatsApp / Call tap tracking (soft conversions)
-  document.querySelectorAll('.mbar .wa, header .hcall, .mbar .cl').forEach(function(a){
-    a.addEventListener('click', function(){
-      var wa = a.classList.contains('wa');
-      try{ if(window.fbq) fbq('track','Contact',{content_name: wa?'WhatsApp':'Call'}); }catch(e){}
-      try{ if(window.gtag) gtag('event', wa?'whatsapp_click':'phone_click'); }catch(e){}
-    });
+  // WhatsApp/Call tap tracking
+  document.querySelectorAll('.mbar .wa,.mbar .cl,header .call,.btn-line[href^="https://wa"]').forEach(function(a){
+    a.addEventListener('click',function(){var wa=/wa\.me/.test(a.href);
+      try{if(window.fbq)fbq('track','Contact',{content_name:wa?'WhatsApp':'Call'});}catch(e){}
+      try{if(window.gtag)gtag('event',wa?'whatsapp_click':'phone_click');}catch(e){}});
   });
 </script>
 </body>
