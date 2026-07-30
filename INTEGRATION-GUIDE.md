@@ -71,6 +71,14 @@ var LEAD_ENDPOINT = "https://your-crm.example.com/api/leads";
 | `residenceType` | `3 BHK` / `4 BHK`               | Configuration selected                 |
 | `page_url`      | `https://.../?utm_source=...`   | Full landing URL **incl. UTM params**  |
 | `referrer`      | `https://google.com/`           | Where the visitor came from            |
+| `gclid`         | `Cj0KCQjw...`                   | **Google Ads click ID** — see below    |
+| `gbraid`/`wbraid`| `0AAAA...`                     | Google's iOS/consent-mode click IDs    |
+| `fbclid`        | `IwAR0...`                      | Meta (Facebook) click ID               |
+| `utm_source` … `utm_content` | `google`, `westin_brand` | Each UTM as its own field         |
+
+> **Click IDs are captured on landing and persisted for 90 days** (localStorage), so they survive even if the visitor scrolls, waits for the popup, or the URL changes before submitting. They are only included when actually present in the landing URL.
+>
+> **Important — offline conversion tracking:** map **`gclid`** to a dedicated field/column in your CRM. When a lead later becomes a site visit / booking, uploading that `gclid` back into Google Ads (Tools → Conversions → Import → From clicks / offline) is what tells Google *which keyword and campaign produced a real buyer* — the single most valuable signal for optimising ad spend. Do **not** rely on parsing `page_url`; use the dedicated `gclid` field.
 
 Notes for whoever wires the endpoint:
 - The request is sent with `mode:'no-cors'` so the browser won't block a cross-domain POST. This means the page **cannot read the response** — it always shows the user a success message. If you need read-back/validation, host the endpoint on the **same domain** as the page (or enable CORS) and we can switch it to a normal `fetch`.

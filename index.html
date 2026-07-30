@@ -438,6 +438,25 @@
 </nav>
 
 <script>
+  // Capture & persist Google/Meta click IDs + UTMs on landing, so they survive to form submit
+  // (needed for Google Ads offline conversion import — CRM should store `gclid` as its own field)
+  var ATTRIB_KEYS=['gclid','gbraid','wbraid','fbclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+  (function captureAttribution(){
+    try{
+      var qs=new URLSearchParams(location.search), store={}, found=false;
+      ATTRIB_KEYS.forEach(function(k){ var v=qs.get(k); if(v){ store[k]=v; found=true; } });
+      if(found){ store._ts=Date.now(); localStorage.setItem('wr_attrib', JSON.stringify(store)); }
+    }catch(e){}
+  })();
+  function getAttribution(){
+    try{
+      var raw=localStorage.getItem('wr_attrib'); if(!raw) return {};
+      var s=JSON.parse(raw);
+      if(s._ts && (Date.now()-s._ts) > 90*24*60*60*1000){ localStorage.removeItem('wr_attrib'); return {}; } // 90-day window
+      delete s._ts; return s;
+    }catch(e){ return {}; }
+  }
+
   // header turns solid on scroll
   var hdr=document.getElementById('hdr');
   addEventListener('scroll',function(){ hdr.classList.toggle('solid', scrollY>60); },{passive:true});
@@ -471,6 +490,7 @@
       if(!ok){s.className='cf-status err';s.textContent='Please enter your name, a valid phone number and select a configuration.';return;}
       b.disabled=true;b.textContent='Sending…';
       var d={firstName:f.elements['firstName'].value,phone:f.elements['phone'].value,residenceType:f.elements['residenceType'].value,page_url:location.href,referrer:document.referrer||''};
+      var attrib=getAttribution(); for(var k in attrib){ d[k]=attrib[k]; } // gclid/gbraid/wbraid/fbclid/utm_* if present
       fireLead(d);
       var done=function(){try{localStorage.setItem('wr_lead','1');}catch(e){}s.className='cf-status ok';s.textContent='Thank you — we’re sending the price list & floor plans to your WhatsApp now, and a Westin relationship manager will call you shortly.';b.textContent='On its way ✓';f.reset();if(onDone)setTimeout(onDone,2400);};
       if(LEAD_ENDPOINT){fetch(LEAD_ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(d)}).then(done).catch(done);}else{done();}
